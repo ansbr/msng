@@ -13,15 +13,8 @@
     "greetings_text": "Напишите мне сообщение",
     "fill_all_fields": "Заполните все поля",
     "here_is_your_link": "Вот ссылка на вашу страницу с контактами",
-    "write_me": "Если хотите сделать короткую ссылку, то напишите мне",
     "next": "Перейти к созданию страницы",
     "done": "Получить ссылку на страницу"
-  },
-  "contacts": {
-    "title": "Написать автору",
-    "description": "Написать автору в Telegram, Viber, WhatsApp",
-    "personal_profile": "Открыть профиль Вконтакте",
-    "personal_profile_link": "https://vk.com/anstak"
   },
   "whatsapp": {
     "title": "Генератор ссылок для WhatsApp",
@@ -67,12 +60,10 @@
     "title": "Генератор ссылок для WeChat с QR Code",
     "description": "Вы можете сделать простую ссылку для WeChat или сгенерировать HTML-код для вашего сайта."
   },
-  "all_pages": {
+  "navigation": {
     "home_link_name": "Главная",
     "page_generator_link_name": "Создать страницу контактов",
-    "contacts_link_name": "Написать мне",
     "back": "Вернуться назад",
-    "home_link": "/ru",
     "share": "Поделиться"
   },
   "riot": {

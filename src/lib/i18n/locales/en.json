@@ -13,20 +13,9 @@
     "greetings_text": "Write me a message",
     "fill_all_fields": "Please fill in all fields",
     "here_is_your_link": "Here is your contact page link",
-    "write_me": "Message me if you want to create a short link",
     "next": "Create contact page",
     "done": "Get a link to your contact page"
 	
-  },
-  "contacts": {
-    "title": "Message the author",
-    "description": "Message the author on Telegram, Viber, WhatsApp",
-    "personal_profile": "Open LinkedIn profile",
-    "personal_profile_link": "https://www.linkedin.com/in/anton-borzenko-81ba9288/"
-  },
-  "blog": {
-    "title": "This is our Social Media Blog",
-    "description": "--"
   },
   "whatsapp": {
     "title": "WhatsApp Link Generator",
@@ -72,12 +61,10 @@
     "title": "WeChat Link Generator with QR Code",
     "description": "You can create a simple WeChat link or generate HTML code for your website."
   },
-  "all_pages": {
+  "navigation": {
     "home_link_name": "Home",
     "page_generator_link_name": "Create a contact page",
-    "contacts_link_name": "Message me",
     "back": "Go back",
-    "home_link": "/",
     "share": "Share"
   },
   "riot": {

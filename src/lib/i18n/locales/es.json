@@ -13,16 +13,9 @@
     "greetings_text": "Escribe un mensaje",
     "fill_all_fields": "Por favor, llenar todos los campos",
     "here_is_your_link": "Aquí está el link a tu página de contacto",
-    "write_me": "Envíame un mensaje si quieres crear un link corto",
     "next": "Crear página de contacto",
     "done": "Obtener un link a tu página de contacto"
 	
-  },
-  "contacts": {
-    "title": "Mensaje al Autor",
-    "description": "Enviar un mensaje al autor en Telegram, Viber, WhatsApp",
-    "personal_profile": "Abrir el perfil en LinkedIn",
-    "personal_profile_link": "https://www.linkedin.com/in/anton-borzenko-81ba9288/"
   },
   "whatsapp": {
     "title": "Generador de link para WhatsApp",
@@ -68,12 +61,10 @@
     "title": "Generador de link para WeChat",
     "description": "Puedes crear un simple link para WeChat o generar un código HTML para tu página web."
   },
-  "all_pages": {
+  "navigation": {
     "home_link_name": "Inicio",
     "page_generator_link_name": "Crear un página de contacto",
-    "contacts_link_name": "Envíeme un mensaje",
     "back": "Retroceder",
-    "home_link": "/es",
     "share": "Compartir"
   },
   "riot": {

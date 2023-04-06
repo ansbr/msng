@@ -13,15 +13,8 @@
     "greetings_text": "Texten Sie mich gerne an!",
     "fill_all_fields": "Bitte alle Felder ausfüllen",
     "here_is_your_link": "Hier ist der Link zu Ihrer Kontakt-Seite",
-    "write_me": "Texten Sie mich an, wenn Sie einen kurzen Link erstellen möchten",
     "next": "Kontakt-Seite erstellen",
     "done": "Link zur Kontakt-Seite erhalten"
-  },
-  "contacts": {
-    "title": "Den Entwickler antexten",
-    "description": "Kontaktieren Sie den Entwickler auf Telegram, Viber, WhatsApp",
-    "personal_profile": "Zum LinkedIn-Profil",
-    "personal_profile_link": "https://www.linkedin.com/in/anton-borzenko-81ba9288/"
   },
   "whatsapp": {
     "title": "WhatsApp Link Generator",
@@ -67,12 +60,10 @@
     "title": "WeChat Link Generator",
     "description": "Sie können sowohl einen kurzen WeChat-Link erstellen als auch HTML-Code für Ihre Website generieren lassen."
   },
-  "all_pages": {
+  "navigation": {
     "home_link_name": "Homepage",
-    "page_generator_link_name": "Kontakt-Seite erstellen",  
-    "contacts_link_name": "Mich antexten",  
+    "page_generator_link_name": "Kontakt-Seite erstellen",
     "back": "Zurück",
-    "home_link": "/de",
     "share": "Teilen"
   },
   "riot": {
