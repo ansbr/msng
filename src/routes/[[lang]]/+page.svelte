@@ -1,14 +1,51 @@
+<!-- https://tailwind-elements.com/docs/standard/components/social-buttons/ -->
 
 <script lang="ts">
+  import Telegram from '$lib/buttons/Telegram.svelte';
+  import Viber from '$lib/buttons/Viber.svelte';
+  import Whatsapp from '$lib/buttons/Whatsapp.svelte';
+  import Messenger from '$lib/buttons/Messenger.svelte';
+  import Wechat from '$lib/buttons/Wechat.svelte';
+  import Skype from '$lib/buttons/Skype.svelte';
+  import Line from '$lib/buttons/Line.svelte';
 	import { _ } from 'svelte-i18n'
+  import type { MessengerType } from '$lib/types/MessengerType';
+
+	const messengers: MessengerType[] = [
+		{ name: 'Telegram', slug: 'tg', component: Telegram },
+		{ name: 'Viber', slug: 'vi', component: Viber },
+		{ name: 'Whatsapp', slug: 'wa', component: Whatsapp },
+		{ name: 'Messenger', slug: 'me', component: Messenger },
+		{ name: 'Wechat', slug: 'we', component: Wechat },
+		{ name: 'Skype', slug: 'sk', component: Skype },
+		{ name: 'Line', slug: 'ln', component: Line }
+	];
+
+	const handleCheck = (index: number) => () => {
+		messengers[index].selected = !messengers[index].selected;
+	}
 </script>
 
-<h1>{$_('hello')} {$_('lang')}</h1>
-<p>Visit <a href="https://kit.svelte.dev">kit.svelte.dev</a> to read the documentation</p>
 
+<div class="bg-light py-3 mb-4">
+	<div class="container text-center">
+		<h1>{$_('home.title')}</h1>
+	</div>
+</div>
 
-<a href="/" data-sveltekit-preload-data="tap">English</a>
-<a href="/ru" data-sveltekit-preload-data="tap">Русский</a>
-<a href="/de" data-sveltekit-preload-data="tap">Deutch</a>
-<a href="/es" data-sveltekit-preload-data="tap">Spain</a>
-
+<div class="container">
+	<div class="row justify-content-center">
+		<div class="col-md-6 col-lg-5 col-xl-4 col-sm-9 col-12">
+			{#each messengers as messenger, index}
+				<div class="input-group mb-3 input-group-lg w-100">
+					<div class="input-group-text">
+						<input class="form-check-input mt-0" type="checkbox" bind:checked={messenger.selected}>
+					</div>
+					<svelte:component this={messenger.component} on:click={handleCheck(index)} size='big'>
+						{messenger.name}
+					</svelte:component>
+				</div>
+			{/each}
+		</div>
+	</div>
+</div>
