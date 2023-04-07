@@ -10,12 +10,12 @@
     <a class="nav-link" class:link-dark={$locale == 'en'} href={`${basepath || '/'}`} data-sveltekit-preload-data="off">English </a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" class:link-dark={$locale == 'es'} href={`/es${basepath}`} data-sveltekit-preload-data="off">Español</a>
+    <a class="nav-link" class:link-dark={$locale == 'es'} href={`/es${basepath == '/' ? '' : basepath}`} data-sveltekit-preload-data="off">Español</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" class:link-dark={$locale == 'de'} href={`/de${basepath}`} data-sveltekit-preload-data="off">Deutsch</a>
+    <a class="nav-link" class:link-dark={$locale == 'de'} href={`/de${basepath == '/' ? '' : basepath}`} data-sveltekit-preload-data="off">Deutsch</a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" class:link-dark={$locale == 'ru'} href={`/ru${basepath}`} data-sveltekit-preload-data="off">Русский</a>
+    <a class="nav-link" class:link-dark={$locale == 'ru'} href={`/ru${basepath == '/' ? '' : basepath}`} data-sveltekit-preload-data="off">Русский</a>
   </li>
 </ul>
