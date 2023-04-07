@@ -14,6 +14,8 @@
   });
 </script>
 
+<!-- 
 <Header />
 <slot />
 <Footer />
+ -->
