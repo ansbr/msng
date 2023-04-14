@@ -11,13 +11,13 @@
   import type { MessengerType } from '$lib/types/MessengerType';
 
 	const messengers: MessengerType[] = [
-		{ name: 'Telegram', slug: 'tg', component: Telegram },
-		{ name: 'Viber', slug: 'vi', component: Viber },
-		{ name: 'Whatsapp', slug: 'wa', component: Whatsapp },
-		{ name: 'Messenger', slug: 'me', component: Messenger },
-		{ name: 'Wechat', slug: 'we', component: Wechat },
-		{ name: 'Skype', slug: 'sk', component: Skype },
-		{ name: 'Line', slug: 'ln', component: Line }
+		{ name: 'Telegram', slug: 'tg', component: Telegram, background: 'rgb(0, 136, 204)' },
+		{ name: 'Viber', slug: 'vi', component: Viber, background: '#7360f2' },
+		{ name: 'Whatsapp', slug: 'wa', component: Whatsapp, background: 'rgb(18, 140, 126)' },
+		{ name: 'Messenger', slug: 'me', component: Messenger, background: 'rgb(0, 132, 255)' },
+		{ name: 'Wechat', slug: 'we', component: Wechat, background: 'rgb(0, 199, 10)' },
+		{ name: 'Skype', slug: 'sk', component: Skype, background: 'rgb(0, 120, 215)' },
+		{ name: 'Line', slug: 'ln', component: Line, background: 'rgb(0, 185, 0)', multiplier: 1.2 }
 	];
   
 	const handleCheck = (index: number) => () => {

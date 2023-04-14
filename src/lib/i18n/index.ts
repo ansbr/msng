@@ -1,4 +1,5 @@
 import { init, register } from 'svelte-i18n'
+import { languages } from '$lib/utils/config'
 
 const defaultLocale = 'en'
 
@@ -9,10 +10,9 @@ export const langUrl = (url: string, locale: string | null | undefined) => {
 	return url;
 }
 
-register('en', () => import('./locales/en.json'))
-register('ru', () => import('./locales/ru.json'))
-register('de', () => import('./locales/de.json'))
-register('es', () => import('./locales/es.json'))
+Object.keys(languages).forEach(locale => {
+	register(locale, () => import(`./locales/${locale}.json`))
+})
 
 init({
 	fallbackLocale: defaultLocale

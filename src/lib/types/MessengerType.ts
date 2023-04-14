@@ -4,5 +4,7 @@ export interface MessengerType {
   name: string,
   slug: string,
   selected?: boolean,
-  component: ComponentType
+  component: ComponentType,
+  background: string
+  multiplier?: number
 }

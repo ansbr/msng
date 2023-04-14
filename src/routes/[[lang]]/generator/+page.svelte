@@ -1,7 +1,11 @@
 <script lang="ts">
-	import ListGenerator from '$lib/messengers/_ListGenerator.svelte';
+	import ListGenerator from '$lib/messengers/ListGenerator.svelte';
 	import { _ } from 'svelte-i18n'
 </script>
+
+<svelte:head>
+	<title>{$_('landing.title')}</title>
+</svelte:head>
 
 <div class="bg-light py-3 mb-4">
 	<div class="container text-center">

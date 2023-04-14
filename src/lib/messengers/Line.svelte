@@ -1,6 +1,6 @@
 <script lang="ts">
-  export let size: 'normal' | 'big' = 'normal'
-  let height: number = 16
+  export let size: 'normal' | 'big' | 'icon' = 'normal'
+  let height: number = 20
 
   if (size == 'big') height = 30
 </script>
@@ -20,7 +20,7 @@
   }
 </style>
 
-<button type="button" class="btn btn-secondary d-flex align-items-center flex-fill" on:click class:btn-lg={size == 'big'} style="background: rgb(0, 185, 0);">
+<button type="button" class="btn btn-secondary d-flex align-items-center flex-fill" on:click class:btn-lg={size == 'big'} class:btn-sm={size == 'icon'}  style="background: rgb(0, 185, 0);">
   <span>
     <svg height={height} fill="currentColor" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" 
     viewBox="0 0 296.528 296.528" xml:space="preserve"><g><path d="M295.838,115.347l0.003-0.001l-0.092-0.76c-0.001-0.013-0.002-0.023-0.004-0.036c-0.001-0.011-0.002-0.021-0.004-0.032
@@ -41,5 +41,7 @@
      h-21.562v12.847h27.645c3.866,0,7,3.134,7,7S237.177,159.269,233.311,159.269z"/></g></svg>
     &nbsp;
   </span>
-  <slot />
+  {#if size != 'icon'}
+    <slot />
+  {/if}
 </button>
