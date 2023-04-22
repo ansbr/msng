@@ -8,9 +8,10 @@
   $: basepath = $page.url.pathname.replace('/' + $locale, '');
 </script>
 
-<SocialShare />
 
 <hr />
+<SocialShare />
+<br />
 <ul class="nav justify-content-center pb-3">
   <li class="nav-item">
     <a class="nav-link" class:link-dark={$locale == 'en'} href={`${basepath || '/'}`} data-sveltekit-preload-data="off">{languages['en']}</a>
