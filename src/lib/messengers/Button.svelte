@@ -8,20 +8,24 @@
   import Skype from '$lib/messengers/svg/Skype.svelte';
   import Line from '$lib/messengers/svg/Line.svelte';
   import Pinterest from '$lib/messengers/svg/Pinterest.svelte';
+  import Facebook from '$lib/messengers/svg/Facebook.svelte';
+  import Linkedin from '$lib/messengers/svg/Linkedin.svelte';
 
   export let messengerName: string;
   export let height: number = 16;
   export let type: string | undefined = undefined;
 
   const messengers: {[key: string]: MessengerType} = {
-    telegram: { title: 'Telegram', slug: 'tg', background: 'rgb(0, 136, 204)', component: Telegram },
+    telegram: { title: 'Telegram', slug: 'tg', background: 'rgb(0, 136, 204)', component: Telegram, multiplier: 1.1 },
     viber: { title: 'Viber', slug: 'vi', background: '#7360f2', component: Viber },
     whatsapp: { title: 'Whatsapp', slug: 'wa', background: 'rgb(18, 140, 126)', component: Whatsapp },
+    facebook: { title: 'Facebook', slug: 'fb', background: '#4267b2', component: Facebook, multiplier: 1.1 },
     messenger: { title: 'Messenger', slug: 'me', background: 'rgb(0, 132, 255)', component: Messenger },
     wechat: { title: 'Wechat', slug: 'we', background: 'rgb(0, 199, 10)', component: Wechat, multiplier: 1.15 },
     skype: { title: 'Skype', slug: 'sk', background: 'rgb(0, 120, 215)', component: Skype, multiplier: 1.1 },
     line: { title: 'Line', slug: 'ln', background: 'rgb(0, 185, 0)', component: Line, multiplier: 1.1 },
     pinterest: { title: 'Pinterest', slug: 'pt', background: '#bf0811', component: Pinterest },
+    linkedin: { title: 'Linkedin', slug: 'li', background: '#0174b3', component: Linkedin },
   }
 
   const messenger = messengers[messengerName];

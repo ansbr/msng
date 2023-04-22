@@ -11,7 +11,9 @@ export const messengers: string[] = [
 
 export const socials: {[key: string]: string[]} = {
   default: [
+    'facebook',
     'pinterest',
+    'linkedin',
     'telegram'
   ],
   ru: [
