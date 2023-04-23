@@ -14,6 +14,8 @@ export const socials: {[key: string]: string[]} = {
     'facebook',
     'pinterest',
     'linkedin',
+    'reddit',
+    'twitter',
     'telegram'
   ],
   ru: [

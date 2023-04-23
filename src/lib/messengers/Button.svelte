@@ -10,7 +10,11 @@
   import Pinterest from '$lib/messengers/svg/Pinterest.svelte';
   import Facebook from '$lib/messengers/svg/Facebook.svelte';
   import Linkedin from '$lib/messengers/svg/Linkedin.svelte';
+  import Reddit from '$lib/messengers/svg/Reddit.svelte';
+  import Twitter from '$lib/messengers/svg/Twitter.svelte';
 
+  let _class: string = "";
+	export { _class as class };
   export let messengerName: string;
   export let height: number = 16;
   export let type: string | undefined = undefined;
@@ -26,6 +30,8 @@
     line: { title: 'Line', slug: 'ln', background: 'rgb(0, 185, 0)', component: Line, multiplier: 1.1 },
     pinterest: { title: 'Pinterest', slug: 'pt', background: '#bf0811', component: Pinterest },
     linkedin: { title: 'Linkedin', slug: 'li', background: '#0174b3', component: Linkedin },
+    reddit: { title: 'Reddit', slug: 'rd', background: '#ff4300', component: Reddit, multiplier: 1.2 },
+    twitter: { title: 'Twitter', slug: 'tw', background: '#00a2f5', component: Twitter, multiplier: 1.1 },
   }
 
   const messenger = messengers[messengerName];
@@ -43,9 +49,13 @@
     padding: 0 5px !important;
     border-radius: 15px;
   }
+
+  .btn {
+    border: none !important;
+  }
 </style>
 
-<button type="button" class="btn btn-secondary d-flex align-items-center flex-fill px-2 position-relative" class:share-btn={type === 'share'} on:click style={`background: ${messenger.background};`}>
+<button type="button" class={`btn btn-secondary d-flex align-items-center flex-fill px-2 position-relative ${_class}`} class:share-btn={type === 'share'} on:click style={`background: ${messenger.background};`}>
   <span class="d-flex align-items-center position-relative">
     <i style:width={height + 'px'}>&nbsp;</i>
     <span class="icon d-flex align-items-center"><svelte:component this={messenger.component} on:click height={height*(messenger.multiplier || 1)} /></span>
