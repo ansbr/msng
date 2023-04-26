@@ -19,6 +19,7 @@ export const socials: {[key: string]: string[]} = {
     'telegram'
   ],
   ru: [
+    'vk',
     'telegram'
   ]
 }

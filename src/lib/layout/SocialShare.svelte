@@ -4,6 +4,8 @@
 	import { _, locale } from 'svelte-i18n'
   import Button from "$lib/messengers/Button.svelte";
   import { socials } from "$lib/utils/config";
+
+  $: $locale && typeof window !== "undefined" && setTimeout(window.Sharer.init);
 </script>
 
 <div class="text-center">

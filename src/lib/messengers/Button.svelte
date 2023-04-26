@@ -12,6 +12,7 @@
   import Linkedin from '$lib/messengers/svg/Linkedin.svelte';
   import Reddit from '$lib/messengers/svg/Reddit.svelte';
   import Twitter from '$lib/messengers/svg/Twitter.svelte';
+  import Vk from '$lib/messengers/svg/Vk.svelte';
 
   let _class: string = "";
 	export { _class as class };
@@ -32,6 +33,7 @@
     linkedin: { title: 'Linkedin', slug: 'li', background: '#0174b3', component: Linkedin },
     reddit: { title: 'Reddit', slug: 'rd', background: '#ff4300', component: Reddit, multiplier: 1.2 },
     twitter: { title: 'Twitter', slug: 'tw', background: '#00a2f5', component: Twitter, multiplier: 1.1 },
+    vk: { title: 'Vk', slug: 'vk', background: 'rgb(82, 129, 184)', component: Vk, multiplier: 1.2 },
   }
 
   const messenger = messengers[messengerName];
