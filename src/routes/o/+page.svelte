@@ -16,8 +16,9 @@
   $: browser && (locale = navigator.language.substring(0, 2))
 </script>
 
-
-<div class="text-center">
-  <h1>{titles[locale] || titles.en}</h1>
+<div class="container opacity-0" class:opacity-100={browser}>
+  <div class="text-center">
+    <h1>{titles[locale] || titles.en}</h1>
+    {JSON.stringify(messengers)}
+  </div>
 </div>
-{JSON.stringify(messengers)}
