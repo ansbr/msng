@@ -19,7 +19,7 @@
         <div class="input-group-text">
           <input class="form-check-input mt-0" type="checkbox" bind:checked={selections[messenger]}>
         </div>
-        <Button class="ps-3" messengerName={messenger} height={22} on:click={handleCheck(messenger)} type="text"></Button>
+        <Button class="ps-3" messengerName={messenger} height={22} on:click={handleCheck(messenger)}></Button>
       </div>
     {/each}
   </div>

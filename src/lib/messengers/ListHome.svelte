@@ -8,7 +8,7 @@
 <div class="row justify-content-center">
     {#each messengers as messenger}
       <div class="col-auto px-1">
-        <Button messengerName={messenger} height={22} type='icon'></Button>
+        <Button messengerName={messenger} height={44} class="px-2"></Button>
       </div>
     {/each}
 </div>

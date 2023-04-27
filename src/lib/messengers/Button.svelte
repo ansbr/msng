@@ -18,12 +18,11 @@
 	export { _class as class };
   export let messengerName: string;
   export let height: number = 16;
-  export let type: string | undefined = undefined;
 
   const messengers: {[key: string]: MessengerType} = {
     telegram: { title: 'Telegram', slug: 'tg', background: 'rgb(0, 136, 204)', component: Telegram, multiplier: 1.1 },
     viber: { title: 'Viber', slug: 'vi', background: '#7360f2', component: Viber },
-    whatsapp: { title: 'Whatsapp', slug: 'wa', background: 'rgb(18, 140, 126)', component: Whatsapp },
+    whatsapp: { title: 'Whatsapp', slug: 'wa', background: '#2dd26e', component: Whatsapp },
     facebook: { title: 'Facebook', slug: 'fb', background: '#4267b2', component: Facebook, multiplier: 1.1 },
     messenger: { title: 'Messenger', slug: 'me', background: 'rgb(0, 132, 255)', component: Messenger },
     wechat: { title: 'Wechat', slug: 'we', background: 'rgb(0, 199, 10)', component: Wechat, multiplier: 1.15 },
@@ -47,24 +46,16 @@
     transform: translate(-50%, -50%);
   }
 
-  .share-btn {
-    padding: 0 5px !important;
-    border-radius: 15px;
-  }
-
   .btn {
     border: none !important;
   }
 </style>
 
-<button type="button" class={`btn btn-secondary d-flex align-items-center flex-fill px-2 position-relative ${_class}`} class:share-btn={type === 'share'} on:click style={`background: ${messenger.background};`}>
+<button type="button" class={`btn btn-secondary d-flex align-items-center flex-fill position-relative ${_class}`} on:click style={`background: ${messenger.background};`}>
   <span class="d-flex align-items-center position-relative">
-    <i style:width={height + 'px'}>&nbsp;</i>
+    <i style:width={height + 'px'} style:line-height={height*1.1 + 'px'}>&nbsp;</i>
     <span class="icon d-flex align-items-center"><svelte:component this={messenger.component} on:click height={height*(messenger.multiplier || 1)} /></span>
   </span>
-  {#if type === 'text'}
-    &nbsp; {messenger.title}
-  {/if}
   {#if $$slots.default}
     &nbsp; <slot />
   {/if}

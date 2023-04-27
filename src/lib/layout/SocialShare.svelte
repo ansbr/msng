@@ -11,7 +11,7 @@
 <div class="text-center">
   {#each socials[$locale == 'ru' ? $locale : 'default'] as social (social)}
     <div class="d-inline-block pe-1" data-sharer={social} data-title={ browser && $page.url && document.title } data-url={ $page.url }>
-      <Button messengerName={social} height={14} type='share'></Button>
+      <Button messengerName={social} height={14} class="p-1 rounded-4"></Button>
     </div>
   {/each}
 </div>
