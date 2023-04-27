@@ -4,7 +4,6 @@
   import Header from "$lib/layout/Header.svelte";
   import NProgress from 'nprogress'
 
-
   beforeNavigate(() => {
     NProgress.start();
   });
