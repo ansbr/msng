@@ -10,6 +10,6 @@
 
 {#each listShare[$locale == 'ru' ? $locale : 'default'].map(m => messengersByName[m]) as messenger (messenger)}
   <div class="d-inline-block px-1" data-sharer={messenger.name} data-title={ browser && $page.url && document.title } data-url={ $page.url }>
-    <Button messenger={messenger} height={14} class="p-1" on:click={(event) => event.preventDefault()}></Button>
+    <Button messenger={messenger} height={14} class="p-1 rounded-1" on:click={(event) => event.preventDefault()}></Button>
   </div>
 {/each}

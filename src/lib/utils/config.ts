@@ -22,7 +22,7 @@ export const messengersList: MessengerType[] = [
   { name: "viber", title: 'Viber', slug: 'vi', background: '#7360f2', component: Viber },
   { name: "whatsapp", title: 'Whatsapp', slug: 'wa', background: '#2dd26e', component: Whatsapp },
   { name: "facebook", title: 'Facebook', slug: 'fb', background: '#4267b2', component: Facebook, multiplier: 1.1 },
-  { name: "fb-messenger", title: 'Messenger', slug: 'me', background: 'rgb(0, 132, 255)', component: Messenger },
+  { name: "fb-messenger", title: 'Messenger', slug: 'fm', background: 'rgb(0, 132, 255)', component: Messenger },
   { name: "wechat", title: 'Wechat', slug: 'wc', background: 'rgb(0, 199, 10)', component: Wechat, multiplier: 1.15 },
   { name: "skype", title: 'Skype', slug: 'sk', background: 'rgb(0, 120, 215)', component: Skype, multiplier: 1.1 },
   { name: "line", title: 'Line', slug: 'ln', background: 'rgb(0, 185, 0)', component: Line, multiplier: 1.1 },
