@@ -4,6 +4,8 @@
 	export { _class as class };
   export let messenger: MessengerType;
   export let height: number = 16;
+  export let target: string | undefined = undefined;
+  export let href: string = '#';
 </script>
 
 <style>
@@ -19,7 +21,7 @@
   }
 </style>
 
-<button type="button" class={`btn btn-secondary d-inline-flex align-items-center flex-fill position-relative ${_class}`} on:click style={`background: ${messenger.background};`}>
+<a {href} {target} type="button" class={`btn btn-secondary d-inline-flex align-items-center position-relative ${_class}`} on:click style={`background: ${messenger.background};`}>
   <span class="d-flex align-items-center position-relative">
     <i style:width={height + 'px'} style:line-height={height*1.1 + 'px'}>&nbsp;</i>
     <span class="icon d-flex align-items-center"><svelte:component this={messenger.component} on:click height={height*(messenger.multiplier || 1)} /></span>
@@ -27,4 +29,4 @@
   {#if $$slots.default}
     &nbsp; <slot />
   {/if}
-</button>
+</a>

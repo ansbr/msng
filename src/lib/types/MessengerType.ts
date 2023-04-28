@@ -5,6 +5,7 @@ export interface MessengerType {
   title: string,
   slug: string,
   component: ComponentType,
-  background: string
-  multiplier?: number
+  background: string,
+  multiplier?: number,
+  value?: string
 }

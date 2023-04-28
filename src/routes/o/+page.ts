@@ -1,12 +1,23 @@
 import type { LoadEvent } from "@sveltejs/kit";
+import { messengersBySlug } from "$lib/utils/config";
+import type { MessengerType } from "$lib/types/MessengerType";
+import { error } from '@sveltejs/kit';
 
 export function load({ url }: LoadEvent) {
-  const messengers: {slug: string, value: string}[] = []
+  const messengers: MessengerType[] = []
   url.searchParams.forEach((slugs, val) => {
     slugs.match(/.{1,2}/g)?.forEach(function(sm) {
-      messengers.push({ slug: sm, value: val.trim() });
+      if (messengersBySlug[sm]) {
+        messengers.push({ ...messengersBySlug[sm], value: val.trim() });
+      }
     })
   })
+
+  if (messengers.length < 1) {
+    throw error(404, {
+      message: 'Not found'
+    });
+  }
 
   return { 
     props: {

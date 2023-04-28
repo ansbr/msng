@@ -19,125 +19,90 @@
   },
   "whatsapp": {
     "title": "WhatsApp Link Generator",
-    "description": "You can create a simple WhatsApp link and add it to your Instagram profile or generate HTML code for your website."
+    "html": "<p>Make sure that number is no having + sign before the country code</p>",
+    "description": "You can create a simple WhatsApp link and add it to your Instagram profile or generate HTML code for your website.",
+    "label": "Enter your WhatsApp phone number (only digits)",
+    "placeholder": "For example: 15417543010",
+    "result": "Here is your link for WhatsApp, copy it and use where you want"
   },
   "vk": {
     "title": "VK Link Generator",
-    "description": "You can create a simple Vk.com link or generate HTML code for your website."
+    "html": "<p>Don't enter your email! Go to My Profile on vk.com: the text in the URL after vk.com/ is your user name</p>",
+    "description": "You can create a simple Vk.com link or generate HTML code for your website.",
+    "label": "Enter your VK.com user name",
+    "placeholder": "For example: username or id123456",
+    "result": "Here is your link for VK, copy it and use where you want"
   },
   "viber": {
     "title": "Viber Link Generator",
-    "description": "You can create a simple Viber link or generate HTML code for your website."
+    "html": "<p>Make sure that number is no having + sign before the country code</p>",
+    "description": "You can create a simple Viber link or generate HTML code for your website.",
+    "label": "Enter your Viber phone number (only digits)",
+    "placeholder": "For example: 15417543010",
+    "result": "Here is your link for Viber, copy it and use where you want"
   },
   "telegram": {
     "title": "Telegram Link Generator",
-    "description": "You can create a simple Telegram link or generate HTML code for your website."
+    "description": "You can create a simple Telegram link or generate HTML code for your website.",
+    "label": "Enter your Telegram login",
+    "placeholder": "For example: Username",
+    "result": "Here is your link for Telegram, copy it and use where you want"
   },
   "instagram": {
     "title": "Instagram Link Generator",
-    "description": "You can create a simple Instagram link or generate HTML code for your website."
+    "html": "",
+    "description": "You can create a simple Instagram link or generate HTML code for your website.",
+    "label": "Enter your Instagram login",
+    "placeholder": "For example: Username",
+    "result": "Here is your link for Instagram, copy it and use where you want"
   },
   "tiktok": {
     "title": "TikTok Link Generator",
-    "description": "You can create a simple TikTok link or generate HTML code for your website."
+    "description": "You can create a simple TikTok link or generate HTML code for your website.",
+    "label": "Enter your TikTok login",
+    "placeholder": "For example: Username",
+    "result": "Here is your link for TikTok, copy it and use where you want"
   },
   "snapchat": {
     "title": "Snapchat Link Generator",
-    "description": "You can create a simple Snapchat link or generate HTML code for your website."
+    "description": "You can create a simple Snapchat link or generate HTML code for your website.",
+    "label": "Enter your Snapchat login",
+    "placeholder": "For example: Username",
+    "result": "Here is your link for Snapchat, copy it and use where you want"
   },
   "skype": {
     "title": "Skype Link Generator",
-    "description": "You can create a simple Skype link or generate HTML code for your website."
+    "description": "You can create a simple Skype link or generate HTML code for your website.",
+    "label": "Enter your Skype login",
+    "placeholder": "Your login or email",
+    "result": "Here is your link for Skype, copy it and use where you want"
   },
   "fb-messenger": {
     "title": "Facebook Messenger Link Generator",
-    "description": "You can create a simple Facebook Messenger link or generate HTML code for your website."
+    "description": "You can create a simple Facebook Messenger link or generate HTML code for your website.",
+    "label": "Enter your Facebook page name",
+    "placeholder": "Your page name",
+    "result": "Here is your link for Facebook Messenger, copy it and use where you want"
   },
   "line": {
     "title": "Line Messenger Link Generator",
-    "description": "You can create a simple Line link or generate HTML code for your website."
+    "description": "You can create a simple Line link or generate HTML code for your website.",
+    "label": "Enter your LINE user ID",
+    "placeholder": "Your user ID",
+    "result": "Here is your link for LINE, copy it and use where you want"
   },
   "wechat": {
     "title": "WeChat Link Generator with QR Code",
-    "description": "You can create a simple WeChat link or generate HTML code for your website."
+    "html": "<p>To create your WeChat link you need to copy your URL from your QR code. Open Wechat, at the bottom go to the <b>ME</b> section. At the top click on your profile picture, then click on <b>My QR code</b>, at the top right open the options and save your QR code. Now you just have to read it from a phone or using <a href='https://scanqr.org/'>https://scanqr.org/</a>, then copy your personal URL and paste to the field below.</p>",
+    "description": "You can create a simple WeChat link or generate HTML code for your website, email, social networks, etc… to make it easy for your customers to reach you",
+    "label": "Enter your WeChat QR Code",
+    "placeholder": "Your WeChat QR Code",
+    "result": "Here is your link for WeChat, copy it and use where you want"
   },
   "navigation": {
     "home_link_name": "Home",
     "page_generator_link_name": "Create a contact page",
     "back": "Go back",
     "share": "Share:"
-  },
-  "riot": {
-    "all_messengers": {
-      "html_code": "HTML link code"
-    },
-    "whatsapp": {
-      "label": "Enter your WhatsApp phone number (only digits)",
-      "placeholder": "For example: 15417543010",
-      "small": "Use only digits, don't use other characters or spaces",
-      "result": "Here is your link for WhatsApp, copy it and use where you want",
-      "imageLink": "Message me on WhatsApp"
-    },
-    "line": {
-      "label": "Enter your LINE user ID",
-      "placeholder": "Your user ID",
-      "result": "Here is your link for LINE, copy it and use where you want",
-      "imageLink": "Message me on LINE"
-    },
-    "wechat": {
-      "label": "Enter your WeChat QR Code",
-      "placeholder": "Your WeChat QR Code",
-      "result": "Here is your link for WeChat, copy it and use where you want",
-      "imageLink": "Message me on WeChat"
-    },
-    "viber": {
-      "label": "Enter your Viber phone number (only digits)",
-      "placeholder": "For example: 15417543010",
-      "result": "Here is your link for Viber, copy it and use where you want",
-      "imageLink": "Message me on Viber"
-    },
-    "telegram": {
-      "label": "Enter your Telegram login",
-      "placeholder": "For example: Username",
-      "result": "Here is your link for Telegram, copy it and use where you want",
-      "imageLink": "Message me on Telegram"
-    },
-    "instagram": {
-      "label": "Enter your Instagram login",
-      "placeholder": "For example: Username",
-      "result": "Here is your link for Instagram, copy it and use where you want",
-      "imageLink": "Message me on Instagram"
-    },
-    "tiktok": {
-      "label": "Enter your TikTok login",
-      "placeholder": "For example: Username",
-      "result": "Here is your link for TikTok, copy it and use where you want",
-      "imageLink": "Message me on TikTok"
-    },
-    "snapchat": {
-      "label": "Enter your Snapchat login",
-      "placeholder": "For example: Username",
-      "result": "Here is your link for Snapchat, copy it and use where you want",
-      "imageLink": "Message me on Snapchat"
-    },
-    "vk": {
-      "label": "Enter your VK.com user name",
-      "placeholder": "For example: username or id123456",
-	  "small": "Don't enter your email! Go to My Profile on vk.com: the text in the URL after vk.com/ is your user name",
-      "result": "Here is your link for VK, copy it and use where you want",
-      "imageLink": "Message me on VK"
-    },
-    "skype": {
-      "label": "Enter your Skype login",
-      "placeholder": "Your login or email",
-      "result": "Here is your link for Skype, copy it and use where you want",
-      "imageLink": "Message me on Skype"
-    },
-    "fb-messenger": {
-      "label": "Enter your Facebook page name",
-      "placeholder": "Your page name",
-      "result": "Here is your link for Facebook Messenger, copy it and use where you want",
-      "imageLink": "Message me on Facebook Messenger"
-    }
   }
 }
