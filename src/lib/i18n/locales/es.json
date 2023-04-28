@@ -15,51 +15,87 @@
     "here_is_your_link": "Aquí está el link a tu página de contacto",
     "next": "Crear página de contacto",
     "done": "Obtener un link a tu página de contacto"
-	
   },
   "whatsapp": {
     "title": "Generador de link para WhatsApp",
-    "description": "Puedes crear un simple link para WhatsApp y agregarlo a tu perfil de Instagram o generar un código HTML para tu página web."
+    "description": "Puedes crear un simple link para WhatsApp y agregarlo a tu perfil de Instagram o generar un código HTML para tu página web.",
+    "help": "<p>Usar solo dígitos, por favor no usar otros caracteres o espacios</p>",
+    "label": "Introducir tu número de teléfono de WhatsApp (Solo dígitos)",
+    "placeholder": "Por ejemplo: 15417543010",
+    "result": "Aquí esta tu link para WhatsApp, cópialo y úsalo donde quieras"
   },
   "vk": {
     "title": "Generador de link para VK",
-    "description": "Puedes crear un simple link para Vk.com o generar un código HTML para tu página web."
+    "description": "Puedes crear un simple link para Vk.com o generar un código HTML para tu página web.",
+    "help": "<p>¡No introducir tu Correo electrónico! Ve a Mi Perfil en Vk.com: el texto tu barra de direcciones del navegador (URL) después del vk.com/ es tu nombre de usuario</p>",
+    "label": "Introducir tu nombre de usuario de VK.com",
+    "placeholder": "Por ejemplo: Username o id123456",
+    "result": "Aquí está tu link para VK, cópialo y úsalo donde quieras"
   },
   "viber": {
     "title": "Generador de link para Viber",
-    "description": "Puedes crear un simple link para Viber o generar un código HTML para tu página web."
+    "description": "Puedes crear un simple link para Viber o generar un código HTML para tu página web.",
+    "help": "<p>Usar solo dígitos, por favor no usar otros caracteres o espacios</p>",
+    "label": "Introducir tu número de teléfono de Viber (Solo dígitos)",
+    "placeholder": "Por ejemplo: 15417543010",
+    "result": "Aquí esta tu link para Viber, cópialo y úsalo donde quieras"
   },
   "telegram": {
     "title": "Generador de link para Telegram",
-    "description": "Puedes crear un simple link para Telegram o generar un código HTML para tu página web."
+    "description": "Puedes crear un simple link para Telegram o generar un código HTML para tu página web.",
+    "label": "Introducir tu nombre de usuario de Telegram",
+    "placeholder": "Por ejemplo: Username",
+    "result": "Aquí esta tu link para Telegram, cópialo y úsalo donde quieras"
   },
   "instagram": {
     "title": "Generador de link para Instagram",
-    "description": "Puedes crear un simple link para Instagram o generar un código HTML para tu página web."
+    "description": "Puedes crear un simple link para Instagram o generar un código HTML para tu página web.",
+    "label": "Introducir tu nombre de usuario de Instagram",
+    "placeholder": "Por ejemplo: Username",
+    "result": "Aquí esta tu link para Instagram, cópialo y úsalo donde quieras"
   },
   "tiktok": {
     "title": "Generador de link para TikTok",
-    "description": "Puedes crear un simple link para TikTok o generar un código HTML para tu página web."
+    "description": "Puedes crear un simple link para TikTok o generar un código HTML para tu página web.",
+    "label": "Introducir tu nombre de usuario de TikTok",
+    "placeholder": "Por ejemplo: Username",
+    "result": "Aquí esta tu link para TikTok, cópialo y úsalo donde quieras"
   },
   "snapchat": {
     "title": "Generador de link para Snapchat",
-    "description": "Puedes crear un simple link para Snapchat o generar un código HTML para tu página web."
+    "description": "Puedes crear un simple link para Snapchat o generar un código HTML para tu página web.",
+    "label": "Introducir tu nombre de usuario de Snapchat",
+    "placeholder": "Por ejemplo: Username",
+    "result": "Aquí esta tu link para Snapchat, cópialo y úsalo donde quieras"
   },
   "skype": {
     "title": "Generador de link para Skype",
-    "description": "Puedes crear un simple link para Skype o generar un código HTML para tu página web."
+    "description": "Puedes crear un simple link para Skype o generar un código HTML para tu página web.",
+    "label": "Introducir tu nombre de usuario de Skype",
+    "placeholder": "Tu nombre de usuario o correo electrónico",
+    "result": "Aquí está tu link para Skype, cópialo y úsalo donde quieras"
   },
   "fb-messenger": {
     "title": "Generador de link para el Facebook Messenger",
-    "description": "Puedes crear un simple link para el Facebook Messenger o generar un código HTML para tu página web."
+    "description": "Puedes crear un simple link para el Facebook Messenger o generar un código HTML para tu página web.",
+    "label": "Introducir tu nombre de página de Facebook",
+    "placeholder": "El nombre de tu Pagina",
+    "result": "Aquí está tu link para el Facebook Messenger, cópialo y úsalo donde quieras"
   },
   "line": {
     "title": "Generador de link para el Messenger LINE",
-    "description": "Puedes crear un simple link para LINE o generar un código HTML para tu página web."
+    "description": "Puedes crear un simple link para LINE o generar un código HTML para tu página web.",
+    "label": "Introducir tu identificación de usuario de LINE",
+    "placeholder": "Tu identificación de usuario",
+    "result": "Aquí esta tu link para LINE, cópialo y úsalo donde quieras"
   },
   "wechat": {
     "title": "Generador de link para WeChat",
-    "description": "Puedes crear un simple link para WeChat o generar un código HTML para tu página web."
+    "description": "Puedes crear un simple link para WeChat o generar un código HTML para tu página web.",
+    "help": "<p>Para crear su enlace de WeChat debe copiar su URL desde su código QR. Abra Wechat, vaya a la sección <b>ME</b> en la parte inferior. En la parte superior, haga clic en su foto de perfil, luego haga clic en <b>My QR code</b>, en la esquina superior derecha abra las opciones y guarde su código QR. Ahora solo tiene que leerlo desde un teléfono o utilizar <a href='https://scanqr.org/'>https://scanqr.org/</a>, luego copie su URL personal y péguela en el campo debajo.</p>",
+    "label": "Introducir tu usuario de WeChat Link",
+    "placeholder": "https://u.wechat.com/example",
+    "result": "Aquí esta tu link para WeChat, cópialo y úsalo donde quieras"
   },
   "navigation": {
     "home_link_name": "Inicio",
@@ -67,78 +103,7 @@
     "back": "Retroceder",
     "share": "Compartir:"
   },
-  "riot": {
-    "all_messengers": {
-      "html_code": "Código del link HTML"
-    },
-    "whatsapp": {
-      "label": "Introducir tu número de teléfono de WhatsApp (Solo dígitos)",
-      "placeholder": "Por ejemplo: 15417543010",
-      "small": "Usar solo dígitos, por favor no usar otros caracteres o espacios",
-      "result": "Aquí esta tu link para WhatsApp, cópialo y úsalo donde quieras",
-      "imageLink": "Envíame un mensaje en WhatsApp"
-    },
-    "line": {
-      "label": "Introducir tu identificación de usuario de LINE",
-      "placeholder": "Tu identificación de usuario",
-      "result": "Aquí esta tu link para LINE, cópialo y úsalo donde quieras",
-      "imageLink": "Envíame un mensaje en LINE"
-    },
-    "wechat": {
-      "label": "Introducir tu usuario de WeChat QR Code",
-      "placeholder": "Tu usuario de WeChat QR Code",
-      "result": "Aquí esta tu link para WeChat, cópialo y úsalo donde quieras",
-      "imageLink": "Envíame un mensaje en WeChat"
-    },
-    "viber": {
-      "label": "Introducir tu número de teléfono de Viber (Solo dígitos)",
-      "placeholder": "Por ejemplo: 15417543010",
-	  "small": "Usar solo dígitos, por favor no usar otros caracteres o espacios",
-      "result": "Aquí esta tu link para Viber, cópialo y úsalo donde quieras",
-      "imageLink": "Envíame un mensaje en Viber"
-    },
-    "telegram": {
-      "label": "Introducir tu nombre de usuario de Telegram",
-      "placeholder": "Por ejemplo: Username",
-      "result": "Aquí esta tu link para Telegram, cópialo y úsalo donde quieras",
-      "imageLink": "Envíame un mensaje en Telegram"
-    },
-    "instagram": {
-      "label": "Introducir tu nombre de usuario de Instagram",
-      "placeholder": "Por ejemplo: Username",
-      "result": "Aquí esta tu link para Instagram, cópialo y úsalo donde quieras",
-      "imageLink": "Envíame un mensaje en Instagram"
-    },
-    "tiktok": {
-      "label": "Introducir tu nombre de usuario de TikTok",
-      "placeholder": "Por ejemplo: Username",
-      "result": "Aquí esta tu link para TikTok, cópialo y úsalo donde quieras",
-      "imageLink": "Envíame un mensaje en TikTok"
-    },
-    "snapchat": {
-      "label": "Introducir tu nombre de usuario de Snapchat",
-      "placeholder": "Por ejemplo: Username",
-      "result": "Aquí esta tu link para Snapchat, cópialo y úsalo donde quieras",
-      "imageLink": "Envíame un mensaje en Snapchat"
-    },
-    "vk": {
-      "label": "Introducir tu nombre de usuario de VK.com",
-      "placeholder": "Por ejemplo: Username o id123456",
-	  "small": "¡No introducir tu Correo electrónico! Ve a Mi Perfil en Vk.com: el texto tu barra de direcciones del navegador (URL) después del vk.com/ es tu nombre de usuario",
-      "result": "Aquí está tu link para VK, cópialo y úsalo donde quieras",
-      "imageLink": "Envíame un mensaje en VK"
-    },
-    "skype": {
-      "label": "Introducir tu nombre de usuario de Skype",
-      "placeholder": "Tu nombre de usuario o correo electrónico",
-      "result": "Aquí está tu link para Skype, cópialo y úsalo donde quieras",
-      "imageLink": "Envíame un mensaje en Skype"
-    },
-    "fb-messenger": {
-      "label": "Introducir tu nombre de página de Facebook",
-      "placeholder": "El nombre de tu Pagina",
-      "result": "Aquí está tu link para el Facebook Messenger, cópialo y úsalo donde quieras",
-      "imageLink": "Envíame un mensaje en el Facebook Messenger "
-    }
+  "all_messengers": {
+    "html_code": "Código del link HTML"
   }
 }

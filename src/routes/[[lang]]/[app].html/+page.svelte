@@ -26,7 +26,7 @@
 
 <div class="container constructor">
   <p class="lead">{$_(`${messenger.name}.description`)}</p>
-  {@html $_(`${messenger.name}.html`, { default: '' })}
+  {@html $_(`${messenger.name}.help`, { default: '' })}
   <p>{$_(`${messenger.name}.label`)}</p>
 
   <div class="input-group mb-3 input-group-lg w-100">
