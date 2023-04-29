@@ -32,6 +32,14 @@
     "placeholder": "Por ejemplo: Username o id123456",
     "result": "Aquí está tu link para VK, cópialo y úsalo donde quieras"
   },
+  "linkedin": {
+    "title": "Generador de enlaces de LinkedIn",
+    "description": "Puede crear un enlace simple de LinkedIn o generar código HTML para su sitio web.",
+    "help": "<p>¡No ingrese su correo electrónico! Vaya a su perfil en linkedin.com, y copie el texto en la URL después de linkedin.com/in/.</p>",
+    "label": "Ingrese su ID de usuario de LinkedIn",
+    "placeholder": "Por ejemplo: john-doe-837ds999",
+    "result": "Aquí está su enlace de LinkedIn, cópielo y úselo donde quiera."
+  },
   "viber": {
     "title": "Generador de link para Viber",
     "description": "Puedes crear un simple link para Viber o generar un código HTML para tu página web.",

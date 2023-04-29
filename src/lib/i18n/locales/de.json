@@ -32,6 +32,14 @@
     "placeholder": "Beispiel: username oder id123456",
     "result": "Hier ist Ihr Link für Vkontakte - einfach kopieren und nutzen, wo Sie wollen"
   },
+  "linkedin": {
+    "title": "LinkedIn Link Generator",
+    "description": "Sie können einen einfachen LinkedIn-Link erstellen oder HTML-Code für Ihre Website generieren.",
+    "help": "<p>Geben Sie nicht Ihre E-Mail-Adresse ein! Gehen Sie zu Ihrem Profil auf linkedin.com und kopieren Sie den Text in der URL nach linkedin.com/in/.</p>",
+    "label": "Geben Sie Ihre LinkedIn-Benutzer-ID ein",
+    "placeholder": "Zum Beispiel: john-doe-837ds999",
+    "result": "Hier ist Ihr Link für LinkedIn, kopieren Sie ihn und verwenden Sie ihn wo immer Sie möchten."
+  },
   "viber": {
     "title": "Viber Link Generator",
     "description": "Sie können sowohl einen kurzen Viber-Link erstellen als auch HTML-Code für Ihre Website generieren lassen.",
