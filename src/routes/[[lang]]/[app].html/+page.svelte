@@ -1,17 +1,21 @@
 <script lang="ts">
   import { page } from '$app/stores';
+  import type { MessengerType } from "$lib/types/MessengerType";
   import Button from '$lib/messengers/Button.svelte';
   import ListBottom from '$lib/messengers/ListBottom.svelte';
 	import { _ } from 'svelte-i18n'
   export let data;
+  let messenger: MessengerType;
   let generatedLink: string | undefined;
-  let { messenger } = data.props
-
-  $: messenger = data.props.messenger
 
   const handleGenerate = () => {
     generatedLink = `${$page.url.origin}/o?${messenger.value}=${messenger.slug}`
   }
+
+  page.subscribe(pg => {
+    messenger = data.props.messenger;
+    generatedLink = undefined;
+  });
 </script>
 
 <style>
