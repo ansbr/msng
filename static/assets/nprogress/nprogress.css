@@ -1,4 +1,9 @@
 /* Make clicks pass-through */
+input[type=number] {
+  /* Remove input number arrows for firefox */
+  -moz-appearance:textfield;
+}
+
 #nprogress {
   pointer-events: none;
 }

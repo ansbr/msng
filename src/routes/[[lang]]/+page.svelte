@@ -13,11 +13,11 @@
 	</div>
 </div>
 
-<div class="container">
-  <ListHome />
+<div class="container d-flex flex-column-reverse">
   <div class="text-center pt-5">
     <h4 class="mb-3">{$_('home.home_h3')}</h4>
     <p>{@html $_('home.paragraph1')}</p>
     <p>{@html $_('home.description')}</p>
   </div>
+  <ListHome />
 </div>

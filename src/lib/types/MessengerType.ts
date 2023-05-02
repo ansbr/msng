@@ -7,5 +7,8 @@ export interface MessengerType {
   component: ComponentType,
   background: string,
   multiplier?: number,
-  value?: string
+  value?: string,
+  link: string,
+  deepLink?: string,
+  inputType: string
 }
