@@ -47,7 +47,14 @@
 
 <svelte:head>
 	<title>{$_(`${messenger.name}.title`)}</title>
+  <meta property="og:title" content={$_(`${messenger.name}.title`)} />
+  <meta name="description" content={$_(`${messenger.name}.description`)} />
+  <meta name="twitter:card" content={$_(`${messenger.name}.description`)} />
+  <meta property="og:description" content={$_(`${messenger.name}.description`)} />
+  <meta property="og:url" content={$page.url.toString()} />
+  <meta property="og:image" content={`${$page.url.origin}/images/logos/${messenger.name}.png`} />
 </svelte:head>
+
 
 <div class="bg-light py-3 mb-4">
 	<div class="container text-center">

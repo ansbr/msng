@@ -1,5 +1,6 @@
 <script lang="ts">
   import { browser } from '$app/environment';
+    import { page } from '$app/stores';
   import ListUser from '$lib/messengers/ListUser.svelte';
   export let data;
   const { messengers } = data.props
@@ -14,10 +15,22 @@
   }
 
   $: browser && (locale = navigator.language.substring(0, 2))
+
+  const title = `${titles.en} to ${messengers.map(m => m.title).join(', ')}`
+  const description = `${titles.en} to ${messengers.reverse().map(m => {
+    if (m.name == 'wechat') return m.title;
+    return `${m.title}: ${m.value}`;
+  }).join(', ')}`
 </script>
 
 <svelte:head>
-	<title>{titles.en}{messengers && messengers.length ? ` in ${messengers[0].title}: ${messengers[0].value}` : ''}</title>
+	<title>{title}</title>
+  <meta property="og:title" content={title} />
+  <meta name="description" content={description} />
+  <meta name="twitter:card" content={description} />
+  <meta property="og:description" content={description} />
+  <meta property="og:url" content={$page.url.toString()} />
+  <meta property="og:image" content={`${$page.url.origin}/images/logos/${messengers[0].name}.png`} />
 </svelte:head>
 
 <div class="container opacity-0" class:opacity-100={browser}>
