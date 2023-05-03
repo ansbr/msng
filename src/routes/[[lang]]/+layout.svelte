@@ -13,6 +13,12 @@
   });
 </script>
 
+<svelte:head>
+  <link href="/assets/nprogress/nprogress.css" rel="stylesheet">
+  <script src="/assets/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="/assets/sharer/sharer.min.js"></script>
+</svelte:head>
+
 <Header />
 <slot />
 <Footer />
