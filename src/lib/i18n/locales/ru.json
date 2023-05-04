@@ -14,6 +14,7 @@
     "fill_all_fields": "Заполните все поля",
     "here_is_your_link": "Вот ссылка на вашу страницу с контактами",
     "next": "Перейти к созданию страницы",
+    "generate": "Сгенерировать",
     "done": "Получить ссылку на страницу"
   },
   "whatsapp": {
@@ -104,6 +105,13 @@
     "label": "Введите ссылку на ваш WeChat профиль",
     "placeholder": "https://u.wechat.com/example",
     "result": "Вот ссылка на ваш аккаунт в WeChat, скопируйте ее и используйте где угодно."
+  },
+  "universal": {
+    "title": "Генератор ссылок для {messenger}",
+    "description": "Вы можете сделать простую ссылку для {messenger} или сгенерировать HTML-код для вашего сайта.",
+    "label": "Введите ID вышего профиля для {messenger}",
+    "placeholder": "Ваш {messenger} ID",
+    "result": "Вот ссылка на ваш аккаунт в {messenger}, скопируйте ее и используйте где угодно."
   },
   "navigation": {
     "home_link_name": "Главная",

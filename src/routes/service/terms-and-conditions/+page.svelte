@@ -1,4 +1,5 @@
 <script lang="ts">
+  import { page } from "$app/stores";
   import Header from "$lib/layout/Header.svelte";
   import PreFooter from "$lib/layout/PreFooter.svelte";
 </script>
@@ -42,7 +43,7 @@
   <p><strong>Third-party Social Media Service</strong> means any services or content (including data, information, products or services) provided by a third-party that may be displayed, included or made available by the Service.</p>
   </li>
   <li>
-  <p><strong>Website</strong> refers to Messenger Links Generator, accessible from <a href="https://msng.link" rel="external nofollow noopener" target="_blank">https://msng.link</a></p>
+  <p><strong>Website</strong> refers to Messenger Links Generator, accessible from <a href={$page.url.origin} rel="external nofollow noopener" target="_blank">{$page.url.origin}</a></p>
   </li>
   <li>
   <p><strong>You</strong> means the individual accessing or using the Service, or the company, or other legal entity on behalf of which such individual is accessing or using the Service, as applicable.</p>
@@ -91,7 +92,7 @@
   <h1>Contact Us</h1>
   <p>If you have any questions about these Terms and Conditions, You can contact us:</p>
   <ul>
-  <li>By email: info@msng.link</li>
+  <li>By email: info@{$page.url.host}</li>
   </ul>
 </div>
 <hr class="mt-1" />

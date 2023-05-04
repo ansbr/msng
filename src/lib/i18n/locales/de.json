@@ -14,6 +14,7 @@
     "fill_all_fields": "Bitte alle Felder ausfüllen",
     "here_is_your_link": "Hier ist der Link zu Ihrer Kontakt-Seite",
     "next": "Kontakt-Seite erstellen",
+    "generate": "Generieren",
     "done": "Link zur Kontakt-Seite erhalten"
   },
   "whatsapp": {
@@ -104,6 +105,13 @@
     "label": "Geben Sie Ihre WeChat Link ein",
     "placeholder": "https://u.wechat.com/example",
     "result": "Hier ist Ihr Link für WeChat - einfach kopieren und nutzen, wo Sie wollen"
+  },
+  "universal": {
+    "title": "{messenger} Link Generator",
+    "description": "Sie können sowohl einen kurzen {messenger}-Link erstellen als auch HTML-Code für Ihre Website generieren lassen.",
+    "label": "Geben Sie Ihre {messenger}-ID ein",
+    "placeholder": "Ihre {messenger}-ID",
+    "result": "Hier ist Ihr Link für {messenger} - einfach kopieren und nutzen, wo Sie wollen"
   },
   "navigation": {
     "home_link_name": "Homepage",

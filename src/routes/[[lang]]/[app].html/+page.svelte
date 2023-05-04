@@ -7,10 +7,25 @@
 	import { _ } from 'svelte-i18n'
   import { onMount } from 'svelte';
   export let data;
-  let messenger: MessengerType;
+  let messenger: MessengerType = data.props.messenger;
   let generatedLink: string | undefined;
   let isCopied = false;
   let inputElelement: HTMLInputElement | undefined;
+  let translates = getTranslates(messenger);
+
+  function getTranslates(messenger: MessengerType) {
+    const defaultOpts = { default: '' };
+    const universalOpts = { values: { messenger: messenger.title }, default: ''}
+    const get = (name: string) => $_(`${messenger.name}.${name}`, defaultOpts) || $_(`universal.${name}`, universalOpts)
+    return {
+      title: get('title'),
+      description: get('description'),
+      help: get('help'),
+      label: get('label'),
+      placeholder: get('placeholder'),
+      result: get('result')
+    }
+  }
 
   const handleGenerate = () => {
     generatedLink = `${$page.url.origin}/o?${messenger.value}=${messenger.slug}`
@@ -26,6 +41,7 @@
     if (inputElelement) inputElelement.type = messenger.inputType
     messenger.value = '';
     generatedLink = undefined;
+    translates = getTranslates(messenger)
     isCopied = false;
   });
 
@@ -46,11 +62,11 @@
 </style>
 
 <svelte:head>
-	<title>{$_(`${messenger.name}.title`)}</title>
-  <meta property="og:title" content={$_(`${messenger.name}.title`)} />
-  <meta name="description" content={$_(`${messenger.name}.description`)} />
-  <meta name="twitter:card" content={$_(`${messenger.name}.description`)} />
-  <meta property="og:description" content={$_(`${messenger.name}.description`)} />
+	<title>{translates.title}</title>
+  <meta property="og:title" content={translates.title} />
+  <meta name="description" content={translates.description} />
+  <meta name="twitter:card" content={translates.description} />
+  <meta property="og:description" content={translates.description} />
   <meta property="og:url" content={$page.url.toString()} />
   <meta property="og:image" content={`${$page.url.origin}/images/logos/${messenger.name}.png`} />
 </svelte:head>
@@ -58,30 +74,30 @@
 
 <div class="bg-light py-3 mb-4">
 	<div class="container text-center">
-		<h1>{$_(`${messenger.name}.title`)}</h1>
+		<h1>{translates.title}</h1>
 	</div>
 </div>
 
 <div class="container constructor">
-  <p class="lead">{$_(`${messenger.name}.description`)}</p>
+  <p class="lead">{translates.description}</p>
 
   <form on:submit|preventDefault={handleGenerate} class:d-none={generatedLink}>
-    {@html $_(`${messenger.name}.help`, { default: '' })}
+    {@html translates.help}
 
-    <p>{$_(`${messenger.name}.label`)}</p>
+    <p>{translates.label}</p>
   
     <div class="input-group mb-3 input-group-lg w-100">
       <Button class="px-3" messenger={messenger} height={30} on:click={(event) => event.preventDefault()} />
-      <input bind:this={inputElelement} class="form-control inputvalue-control" bind:value={messenger.value} placeholder={$_(`${messenger.name}.placeholder`)}>
+      <input bind:this={inputElelement} class="form-control inputvalue-control" bind:value={messenger.value} placeholder={translates.placeholder}>
     </div>
 
     <div class="text-center pt-3" class:d-none={!messenger.value}>
-      <button class="btn btn-primary btn-lg" type='submit'>Generate</button>
+      <button class="btn btn-primary btn-lg" type='submit'>{$_(`landing.generate`)}</button>
     </div>
   </form>
 
   {#if generatedLink}
-    <p>{$_(`${messenger.name}.result`)}</p>
+    <p>{translates.result}</p>
     <div class="input-group mb-3 input-group-lg">
       <input type="text" class="form-control" value={generatedLink} readonly>
       <button class="btn btn-primary d-flex align-items-center" class:btn-success={isCopied} type="button" on:click={handleCopy}>

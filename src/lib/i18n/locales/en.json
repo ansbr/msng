@@ -14,6 +14,7 @@
     "fill_all_fields": "Please fill in all fields",
     "here_is_your_link": "Here is your contact page link",
     "next": "Create contact page",
+    "generate": "Generate",
     "done": "Get a link to your contact page"
 	
   },
@@ -105,6 +106,13 @@
     "label": "Enter your WeChat Link from QR Code",
     "placeholder": "https://u.wechat.com/example",
     "result": "Here is your link for WeChat, copy it and use where you want"
+  },
+  "universal": {
+    "title": "{messenger} Link Generator",
+    "description": "111 You can create a simple {messenger} link or generate HTML code for your website.",
+    "label": "Enter your {messenger} profile ID",
+    "placeholder": "Your profile ID",
+    "result": "Here is your link for {messenger}, copy it and use where you want"
   },
   "navigation": {
     "home_link_name": "Home",
