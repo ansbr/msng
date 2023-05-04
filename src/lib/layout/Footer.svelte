@@ -1,26 +1,15 @@
 <script lang="ts">
 	import { page } from '$app/stores';
 	import { locale, _ } from 'svelte-i18n'
-  import ListShare from '$lib/messengers/ListShare.svelte';
   import { languages } from '$lib/utils/config';
+  import PreFooter from './PreFooter.svelte';
 
   $: basepath = $page.url.pathname.replace('/' + $locale, '');
 </script>
 
-<style>
-  .share-title {
-    display: inline-block;
-    position: relative;
-    top: 3px;
-  }
-</style>
-
 <hr class="mt-5" />
 
-<div class="text-center mb-3">
-  <div class="share-title">{$_('navigation.share')} </div>
-  <ListShare />
-</div>
+<PreFooter />
 
 <ul class="nav justify-content-center pb-3">
   <li class="nav-item">

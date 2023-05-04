@@ -5,7 +5,7 @@
   import Button from "$lib/messengers/Button.svelte";
   import { listShare, messengersByName } from "$lib/utils/config";
 
-  $: $locale && typeof window !== "undefined" && setTimeout(window.Sharer.init);
+  $: $locale && typeof window !== "undefined" && setTimeout(window.Sharer?.init);
 </script>
 
 {#each listShare[$locale == 'ru' ? $locale : 'default'].map(m => messengersByName[m]) as messenger (messenger)}

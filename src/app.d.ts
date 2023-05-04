@@ -9,7 +9,7 @@ declare global {
 	}
 
 	interface Window {
-		Sharer: any
+		Sharer: any | undefined
 	}
 }
 
