@@ -109,7 +109,7 @@
   },
   "universal": {
     "title": "{messenger} Link Generator",
-    "description": "111 You can create a simple {messenger} link or generate HTML code for your website.",
+    "description": "You can create a simple {messenger} link or generate HTML code for your website.",
     "label": "Enter your {messenger} profile ID",
     "placeholder": "Your profile ID",
     "result": "Here is your link for {messenger}, copy it and use where you want"

@@ -23,6 +23,19 @@
   }).join(', ')}`
 </script>
 
+<style>
+  .bottom-link {
+    position: absolute;
+    bottom: 10px;
+    width: 100%;
+    font-size: 12px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #6c757d;
+    text-decoration: none;
+  }
+</style>
+
 <svelte:head>
 	<title>{title}</title>
   <meta property="og:title" content={title} />
@@ -38,5 +51,6 @@
     <h2>{titles[locale] || titles.en}</h2>
     <br />
     <ListUser messengers={messengers} />
+    <a class="bottom-link" href={$page.url.origin}>{$page.url.host}</a>
   </div>
 </div>
