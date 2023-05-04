@@ -1,4 +1,4 @@
-import { init, register } from 'svelte-i18n'
+import { init, register, waitLocale, locale } from 'svelte-i18n'
 import { languages } from '$lib/utils/config'
 
 const defaultLocale = 'en'
@@ -14,6 +14,14 @@ Object.keys(languages).forEach(locale => {
 	register(locale, () => import(`./locales/${locale}.json`))
 })
 
-init({
-	fallbackLocale: defaultLocale
-})
+
+const initI18n = async (lang: string) => {
+	locale.set(lang)
+	await waitLocale(lang)
+	init({
+		fallbackLocale: defaultLocale,
+		initialLocale: lang
+	})
+}
+
+export default initI18n;
