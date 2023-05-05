@@ -15,7 +15,7 @@ export function load({ url }: LoadEvent) {
 
   if (messengers.length < 1) {
     throw error(404, {
-      message: 'Not found'
+      message: 'Not Found'
     });
   }
 
