@@ -14,14 +14,18 @@ Object.keys(languages).forEach(locale => {
 	register(locale, () => import(`./locales/${locale}.json`))
 })
 
+let initializedI18n = false
 
 const initI18n = async (lang: string) => {
 	locale.set(lang)
 	await waitLocale(lang)
-	init({
-		fallbackLocale: defaultLocale,
-		initialLocale: lang
-	})
+	if (!initializedI18n) {
+		init({
+			fallbackLocale: defaultLocale,
+			initialLocale: lang
+		})
+		initializedI18n = true
+	}
 }
 
 export default initI18n;
