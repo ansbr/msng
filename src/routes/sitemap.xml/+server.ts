@@ -12,7 +12,7 @@ export const GET: RequestHandler = async (page) => {
 	const siteURL = page.url.origin;
 	const priority = 0.6;
 	const frequency = 'weekly';
-  const lastmod = new Date().toISOString();
+  const lastmod = new Date().toISOString().split("T")[0];
 
   const homePages = Object.entries(languages).map(lang => {
     const path = lang[0] == 'en' ? '' : '/' + lang[0];
