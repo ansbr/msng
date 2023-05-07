@@ -5,15 +5,15 @@
   import { messengers, messengersByName } from "$lib/utils/config";
   import type { MessengerType } from "$lib/types/MessengerType";
   
-  export let selected: string[] = []
+  export let selected: MessengerType[] = [];
 
 	const handleClick = (messenger: MessengerType) => (event: MouseEvent) => {
     event.preventDefault();
-    let index = selected.indexOf(messenger.slug);
+    let index = selected.indexOf(messenger);
     if (index > -1) {
       selected = selected.filter((_slug, idx) => idx !== index)
     } else {
-      selected = [...selected, messenger.slug]
+      selected = [...selected, messenger]
     }
 	}
 </script>
@@ -26,7 +26,7 @@
         <div class="col-12 col-md-6">
           <div class="input-group mb-3 input-group-lg w-100">
             <label class="input-group-text">
-              <input class="form-check-input mt-0" name={'messengers'} type="checkbox" value={messenger.slug} bind:group={selected}>
+              <input class="form-check-input mt-0" name={'messengers'} type="checkbox" value={messenger} bind:group={selected}>
             </label>
             <Button class="ps-3 flex-fill" messenger={messenger} height={22} on:click={handleClick(messenger)}>
               {messenger.title}

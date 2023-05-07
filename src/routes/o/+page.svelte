@@ -37,7 +37,7 @@
 </style>
 
 <svelte:head>
-	<title>{title}</title>
+  <title>{title}</title>
   <meta property="og:title" content={title} />
   <meta name="description" content={description} />
   <meta name="twitter:card" content={description} />

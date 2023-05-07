@@ -1,9 +1,11 @@
 <script lang="ts">
   import { page } from '$app/stores';
+  import type { MessengerType } from "$lib/types/MessengerType";
 	import ListGenerator from '$lib/messengers/ListGenerator.svelte';
 	import { _ } from 'svelte-i18n'
+  import Input from '$lib/messengers/Input.svelte';
 
-  let selectedMessengers: string[] = []
+  let selectedMessengers: MessengerType[] = [];
   let stage: number = 0
   let container: HTMLDivElement;
 
@@ -13,15 +15,23 @@
     return check;
   };
 
-  const handleGenerate = () => {
+  const handleStartGenerate = () => {
     stage = 1;
     if (!mobileCheck()) {
       container.style.minHeight = container.clientHeight + 'px';
     }
   }
+
+  const handleFinishGenerate = () => {
+    console.log(selectedMessengers)
+  }
+  
 </script>
 
 <style>
+  .constructor {
+    max-width: 600px;
+  }
   .btn-generate-container {
     position: sticky;
     bottom: 0;
@@ -56,14 +66,22 @@
       <h4>{$_('landing.check_messengers')}</h4>
     </div>
     <ListGenerator bind:selected={selectedMessengers} />
-    
-    <div class="text-center btn-generate-container" class:d-none={!selectedMessengers?.length || stage != 0}>
-      <button class="btn btn-primary btn-lg" on:click={handleGenerate}>{$_(`landing.next`)}</button>
-    </div>
   </div>
   
   {#if stage == 1}
-    {JSON.stringify(selectedMessengers)}
+    <div class="constructor container">
+      {#each selectedMessengers as messenger }
+        <Input bind:messenger={messenger} />
+      {/each}
+      
+      <div class="text-center pt-3" class:d-none={selectedMessengers.filter(m => !m.value).length}>
+        <button class="btn btn-primary btn-lg" on:click={handleFinishGenerate}>{$_(`landing.generate`)}</button>
+      </div>
+    </div>
   {/if}
+</div>
+
+<div class="text-center btn-generate-container" class:d-none={!selectedMessengers?.length || stage != 0}>
+  <button class="btn btn-primary btn-lg" on:click={handleStartGenerate}>{$_(`landing.next`)}</button>
 </div>
 

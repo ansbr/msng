@@ -1,16 +1,14 @@
 <script lang="ts">
   import { page } from '$app/stores';
   import type { MessengerType } from "$lib/types/MessengerType";
-  import Button from '$lib/messengers/Button.svelte';
   import ListBottom from '$lib/messengers/ListBottom.svelte';
-  import copy from 'copy-to-clipboard';
 	import { _ } from 'svelte-i18n'
-  import { onMount } from 'svelte';
+  import copy from 'copy-to-clipboard';
+  import Input from '$lib/messengers/Input.svelte';
   export let data;
   let messenger: MessengerType = data.props.messenger;
   let generatedLink: string | undefined;
   let isCopied = false;
-  let inputElelement: HTMLInputElement | undefined;
   let translates = getTranslates(messenger);
 
   function getTranslates(messenger: MessengerType) {
@@ -38,26 +36,18 @@
 
   page.subscribe(pg => {
     messenger = data.props.messenger;
-    if (inputElelement) inputElelement.type = messenger.inputType
     messenger.value = '';
     generatedLink = undefined;
     translates = getTranslates(messenger)
     isCopied = false;
   });
 
-  onMount(() => {
-    if (inputElelement) inputElelement.type = messenger.inputType
-  })
+
 </script>
 
 <style>
   .constructor {
     max-width: 600px;
-  }
-  .inputvalue-control::-webkit-outer-spin-button,
-  .inputvalue-control::-webkit-inner-spin-button {
-    -webkit-appearance: none;
-    margin: 0;
   }
 </style>
 
@@ -84,12 +74,7 @@
   <form on:submit|preventDefault={handleGenerate} class:d-none={generatedLink}>
     {@html translates.help}
 
-    <p>{translates.label}</p>
-  
-    <div class="input-group mb-3 input-group-lg w-100">
-      <Button class="px-3" messenger={messenger} height={30} on:click={(event) => event.preventDefault()} />
-      <input bind:this={inputElelement} class="form-control inputvalue-control" bind:value={messenger.value} placeholder={translates.placeholder}>
-    </div>
+    <Input bind:messenger={messenger} />
 
     <div class="text-center pt-3" class:d-none={!messenger.value}>
       <button class="btn btn-primary btn-lg" type='submit'>{$_(`landing.generate`)}</button>
