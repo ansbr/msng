@@ -1,7 +1,7 @@
 <script lang="ts">
   import QRCode from "qrcode";
 
-  export let value: string | '' = '';
+  export let value: string = '';
   export let width: number = 100;
 
   const generate = (canvas: HTMLElement) => {
