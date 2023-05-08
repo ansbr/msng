@@ -60,11 +60,6 @@
     padding: 10px;
     background: #fff;
   }
-  .btn-back {
-    margin: -9px 12px 0 0;
-    right: 0;
-    white-space: nowrap;
-  }
 </style>
 
 <svelte:head>
@@ -95,16 +90,20 @@
   </div>
   
   {#if stage == 1}
-    <div class="constructor container position-relative">
-      <button class="btn btn-secondary btn-back position-absolute" on:click={() => stage = 0}>{$_('navigation.back')}</button>
+    <form class="constructor container position-relative" on:submit={handleFinishGenerate}>
       {#each selectedMessengers as messenger }
         <Input bind:messenger={messenger} />
       {/each}
       
-      <div class="text-center pt-3" class:d-none={selectedMessengers.filter(m => !m.value).length}>
-        <button class="btn btn-primary btn-lg" on:click={handleFinishGenerate}>{$_(`landing.generate`)}</button>
+      <div class="row justify-content-between pt-3 flex-row-reverse">
+        <div class="col text-end" class:d-none={selectedMessengers.filter(m => !m.value).length}>
+          <button class="btn btn-primary btn-lg" type="submit">{$_(`landing.generate`)}</button>
+        </div>
+        <div class="col text-start">
+          <button class="btn btn-secondary btn-lg px-2" on:click={() => stage = 0}>{$_('navigation.back')}</button>
+        </div>
       </div>
-    </div>
+    </form>
   {/if}
 
   {#if stage == 2}
@@ -116,7 +115,7 @@
           <svg width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#fff" d="M320 448v40c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V120c0-13.255 10.745-24 24-24h72v296c0 30.879 25.121 56 56 56h168zm0-344V0H152c-13.255 0-24 10.745-24 24v368c0 13.255 10.745 24 24 24h272c13.255 0 24-10.745 24-24V128H344c-13.2 0-24-10.8-24-24zm120.971-31.029L375.029 7.029A24 24 0 0 0 358.059 0H352v96h96v-6.059a24 24 0 0 0-7.029-16.97z"></path></svg>
         </button>
       </div>
-      <div class="text-center pt-2 pb-3">
+      <div class="pt-2 pb-3">
         <button class="btn btn-secondary btn-lg" on:click={handleBack}>{$_('navigation.back')}</button>
       </div>
     </div>
