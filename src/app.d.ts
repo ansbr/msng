@@ -10,6 +10,7 @@ declare global {
 
 	interface Window {
 		Sharer: any | undefined
+    adsbygoogle: any | undefined
 	}
 }
 
