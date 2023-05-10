@@ -27,7 +27,7 @@
 
 <!-- Top banner -->
 <ins class="adsbygoogle"
-  style="display:block"
+  style="display:block;text-align:center;"
   data-ad-client="ca-pub-2783112053927174"
   data-ad-slot="6985881377"
   data-ad-format="auto"
