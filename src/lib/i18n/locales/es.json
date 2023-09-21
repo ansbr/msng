@@ -1,18 +1,18 @@
 {
   "home": {
     "title": "Generador de Links de Messenger ",
-    "home_h3": "Todos nosotros usamos una aplicación de mensajes en línea.",
+    "homeH3": "Todos nosotros usamos una aplicación de mensajes en línea.",
     "paragraph1": "Si estás buscando una opción para crear un link que puede ser usado por tus clientes para enviarte mensajes directos en WhatsApp, Viber, Telegram, etc... Estas en el sitio correcto.",
     "description": "Nosotros generaremos un link para cualquier messenger de tu preferencia."
   },
   "landing": {
     "title": "Crear un página de contacto con links directos a los chats de messengers",
     "description": "Nosotros generaremos para ti una página de contacto con links a todas tus cuentas de messenger - Gratuitamente! Perfecto para instagram y otras redes sociales.",
-    "check_messengers": "Selecciona los messengers que usas.",
+    "checkMessengers": "Selecciona los messengers que usas.",
     "greetings": "Introduce el texto que quieras que sea mostrado antes de los botones",
-    "greetings_text": "Escribe un mensaje",
-    "fill_all_fields": "Por favor, llenar todos los campos",
-    "here_is_your_link": "Aquí está el link a tu página de contacto",
+    "greetingsText": "Escribe un mensaje",
+    "fillAllFields": "Por favor, llenar todos los campos",
+    "hereIsYourLink": "Aquí está el link a tu página de contacto",
     "next": "Crear página de contacto",
     "generate": "Generar",
     "done": "Obtener un link a tu página de contacto"
@@ -84,7 +84,7 @@
     "placeholder": "Tu nombre de usuario o correo electrónico",
     "result": "Aquí está tu link para Skype, cópialo y úsalo donde quieras"
   },
-  "fb-messenger": {
+  "fbMessenger": {
     "title": "Generador de link para el Facebook Messenger",
     "description": "Puedes crear un simple link para el Facebook Messenger o generar un código HTML para tu página web.",
     "label": "Introducir tu nombre de página de Facebook",
@@ -114,12 +114,12 @@
     "result": "Aquí esta tu link para {messenger}, cópialo y úsalo donde quieras"
   },
   "navigation": {
-    "home_link_name": "Inicio",
-    "page_generator_link_name": "Crear un página de contacto",
+    "homeLinkName": "Inicio",
+    "pageGeneratorLinkName": "Crear un página de contacto",
     "back": "Retroceder",
     "share": "Compartir:"
   },
-  "all_messengers": {
-    "html_code": "Código del link HTML"
+  "allMessengers": {
+    "htmlCode": "Código del link HTML"
   }
 }

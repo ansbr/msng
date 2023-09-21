@@ -22,7 +22,7 @@ export const messengersList: MessengerType[] = [
   { name: "viber", title: 'Viber', slug: 'vi', background: '#7360f2', component: Viber, link: 'viber://chat?number={-}', deepLink: 'viber://add?number={-}', inputType: 'number' },
   { name: "whatsapp", title: 'Whatsapp', slug: 'wa', background: '#2dd26e', component: Whatsapp, link: 'https://wa.me/{-}', deepLink: 'whatsapp://send?phone={-}', inputType: 'number' },
   { name: "facebook", title: 'Facebook', slug: 'fb', background: '#4267b2', component: Facebook, multiplier: 1.1, link: 'https://www.facebook.com/{-}', inputType: 'text' },
-  { name: "fb-messenger", title: 'Messenger', slug: 'fm', background: 'rgb(0, 132, 255)', component: Messenger, link: 'https://m.me/{-}', inputType: 'text' },
+  { name: "fbMessenger", title: 'Messenger', slug: 'fm', background: 'rgb(0, 132, 255)', component: Messenger, link: 'https://m.me/{-}', inputType: 'text' },
   { name: "wechat", title: 'Wechat', slug: 'wc', background: 'rgb(0, 199, 10)', component: Wechat, multiplier: 1.15, link: '/o/?{-}=wc', inputType: 'text' },
   { name: "skype", title: 'Skype', slug: 'sk', background: 'rgb(0, 120, 215)', component: Skype, multiplier: 1.1, link: 'skype:{-}?chat', deepLink: 'skype:{-}?chat', inputType: 'text' },
   { name: "line", title: 'Line', slug: 'ln', background: 'rgb(0, 185, 0)', component: Line, multiplier: 1.1, link: 'https://line.me/R/ti/p/@{-}', deepLink: 'line://ti/p/@{-}', inputType: 'text' },
@@ -44,7 +44,7 @@ export const messengers: string[] = [
   'telegram',
   'viber',
   'whatsapp',
-  'fb-messenger',
+  'fbMessenger',
   'wechat',
   'skype',
   'line',
@@ -76,6 +76,7 @@ export const languages: {[key: string]: string} = {
   en: 'English',
   es: 'Español',
   de: 'Deutsch',
-  ru: 'Русский'
+  ru: 'Русский',
+  zh: '中文'
 }
 

@@ -1,0 +1,125 @@
+{
+  "home": {
+    "title": "Messenger链接生成器",
+    "homeH3": "周围的每个人都在使用在线通讯工具。",
+    "paragraph1": "如果您正在寻找一种选项，可以创建一个链接，客户可以直接通过WhatsApp、Viber、Telegram等与您联系，<br /> 您来对地方了。",
+    "description": "我们将为您生成任何您选择的通讯工具的链接。"
+  },
+  "landing": {
+    "title": "创建一个带有直接链接到通讯工具的联系页面",
+    "description": "我们将免费为您生成一个带有所有通讯工具账户链接的联系页面！非常适合Instagram和其他社交网络。",
+    "checkMessengers": "选择您使用的通讯工具",
+    "greetings": "在按钮之前输入要显示的文本",
+    "greetingsText": "给我写条消息",
+    "fillAllFields": "请填写所有字段",
+    "hereIsYourLink": "这是您的联系页面链接",
+    "next": "创建联系页面",
+    "generate": "生成",
+    "done": "获取联系页面链接"
+  },
+  "whatsapp": {
+    "title": "WhatsApp链接生成器",
+    "description": "您可以创建一个简单的WhatsApp链接，并将其添加到您的Instagram个人资料中，或为您的网站生成HTML代码。",
+    "help": "<p>确保号码在国家代码之前没有+号</p>",
+    "label": "输入您的WhatsApp电话号码（仅限数字）",
+    "placeholder": "例如：15417543010",
+    "result": "这是您的WhatsApp链接，请复制并在需要的地方使用"
+  },
+  "vk": {
+    "title": "VK链接生成器",
+    "description": "您可以创建一个简单的Vk.com链接，或为您的网站生成HTML代码。",
+    "help": "<p>不要输入您的电子邮件！转到Vk.com上的“我的个人资料”：vk.com/之后的URL中的文本是您的用户名</p>",
+    "label": "输入您的VK.com用户名称",
+    "placeholder": "例如：用户名或id123456",
+    "result": "这是您的VK链接，请复制并在需要的地方使用"
+  },
+  "linkedin": {
+    "title": "LinkedIn链接生成器",
+    "description": "您可以创建一个简单的LinkedIn链接，或为您的网站生成HTML代码。",
+    "help": "<p>不要输入您的电子邮件！转到linkedin.com上的个人资料，复制链接之后的文本linkedin.com/in/。</p>",
+    "label": "输入您的LinkedIn用户ID",
+    "placeholder": "例如：john-doe-837ds999",
+    "result": "这是您的LinkedIn链接，请复制并在需要的地方使用"
+  },
+  "viber": {
+    "title": "Viber链接生成器",
+    "description": "您可以创建一个简单的Viber链接，或为您的网站生成HTML代码。",
+    "help": "<p>确保号码在国家代码之前没有+号</p>",
+    "label": "输入您的Viber电话号码（仅限数字）",
+    "placeholder": "例如：15417543010",
+    "result": "这是您的Viber链接，请复制并在需要的地方使用"
+  },
+  "telegram": {
+    "title": "Telegram链接生成器",
+    "description": "您可以创建一个简单的Telegram链接，或为您的网站生成HTML代码。",
+    "label": "输入您的Telegram登录名",
+    "placeholder": "例如：用户名",
+    "result": "这是您的Telegram链接，请复制并在需要的地方使用"
+  },
+  "instagram": {
+    "title": "Instagram链接生成器",
+    "description": "您可以创建一个简单的Instagram链接，或为您的网站生成HTML代码。",
+    "label": "输入您的Instagram登录名",
+    "placeholder": "例如：用户名",
+    "result": "这是您的Instagram链接，请复制并在需要的地方使用"
+  },
+  "tiktok": {
+    "title": "TikTok链接生成器",
+    "description": "您可以创建一个简单的TikTok链接或为您的网站生成HTML代码。",
+    "label": "输入您的TikTok登录名",
+    "placeholder": "例如：用户名",
+    "result": "这是您的TikTok链接，请复制并在需要的地方使用"
+  },
+  "snapchat": {
+    "title": "Snapchat链接生成器",
+    "description": "您可以创建一个简单的Snapchat链接或为您的网站生成HTML代码。",
+    "label": "输入您的Snapchat登录名",
+    "placeholder": "例如：用户名",
+    "result": "这是您的Snapchat链接，请复制并在需要的地方使用"
+  },
+  "skype": {
+    "title": "Skype链接生成器",
+    "description": "您可以创建一个简单的Skype链接或为您的网站生成HTML代码。",
+    "label": "输入您的Skype登录名",
+    "placeholder": "您的登录名或电子邮件",
+    "result": "这是您的Skype链接，请复制并在需要的地方使用"
+  },
+  "fbMessenger": {
+    "title": "Facebook Messenger链接生成器",
+    "description": "您可以创建一个简单的Facebook Messenger链接或为您的网站生成HTML代码。",
+    "label": "输入您的Facebook页面名称",
+    "placeholder": "您的页面名称",
+    "result": "这是您的Facebook Messenger链接，请复制并在需要的地方使用"
+  },
+  "line": {
+    "title": "Line Messenger链接生成器",
+    "description": "您可以创建一个简单的Line链接或为您的网站生成HTML代码。",
+    "label": "输入您的LINE用户ID",
+    "placeholder": "您的用户ID",
+    "result": "这是您的LINE链接，请复制并在需要的地方使用"
+  },
+  "wechat": {
+    "title": "带有二维码的微信链接生成器",
+    "description": "您可以创建一个简单的微信链接或为您的网站、电子邮件、社交网络等生成HTML代码，以便您的客户能够轻松联系您",
+    "help": "<p>要创建微信链接，您需要从二维码中获取链接。打开微信，转到底部的<b>我</b>部分。在顶部，点击您的个人头像，然后点击<b>我的二维码</b>。打开右上角的选项并保存您的二维码。现在，您只需要从手机上读取或使用<a href='https://scanqr.org/'>https://scanqr.org/</a>，然后复制您的个人URL并粘贴到下面的字段中。</p>",
+    "label": "输入您的微信链接（来自二维码）",
+    "placeholder": "https://u.wechat.com/example",
+    "result": "这是您的微信链接，请复制并在需要的地方使用"
+  },
+  "universal": {
+    "title": "{messenger}链接生成器",
+    "description": "您可以创建一个简单的{messenger}链接或为您的网站生成HTML代码。",
+    "label": "输入您的{messenger}个人ID",
+    "placeholder": "您的个人ID",
+    "result": "这是您的{messenger}链接，请复制并在需要的地方使用"
+  },
+  "navigation": {
+    "homeLinkName": "首页",
+    "pageGeneratorLinkName": "创建联系页面",
+    "back": "返回",
+    "share": "分享："
+  },
+  "allMessengers": {
+    "htmlCode": "HTML链接代码"
+  }
+}

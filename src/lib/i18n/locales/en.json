@@ -1,22 +1,21 @@
 {
   "home": {
     "title": "Messenger Links Generator",
-    "home_h3": "Everyone around uses online messengers.",
+    "homeH3": "Everyone around uses online messengers.",
     "paragraph1": "If you're looking for an option to create a link using which customers will be able to message you directly on WhatsApp, Viber, Telegram, etc.,<br /> you're in the right place.",
     "description": "We will generate a link for any messenger of your choice."
   },
   "landing": {
     "title": "Create a contact page with direct links to messenger chats",
     "description": "We'll generate you a contact page with links to all your messenger accounts - for free! Perfect for Instagram and other social networks.",
-    "check_messengers": "Select the messengers that you use",
+    "checkMessengers": "Select the messengers that you use",
     "greetings": "Enter the text you want to be displayed before the buttons",
-    "greetings_text": "Write me a message",
-    "fill_all_fields": "Please fill in all fields",
-    "here_is_your_link": "Here is your contact page link",
+    "greetingsText": "Write me a message",
+    "fillAllFields": "Please fill in all fields",
+    "hereIsYourLink": "Here is your contact page link",
     "next": "Create contact page",
     "generate": "Generate",
     "done": "Get a link to your contact page"
-	
   },
   "whatsapp": {
     "title": "WhatsApp Link Generator",
@@ -85,7 +84,7 @@
     "placeholder": "Your login or email",
     "result": "Here is your link for Skype, copy it and use where you want"
   },
-  "fb-messenger": {
+  "fbMessenger": {
     "title": "Facebook Messenger Link Generator",
     "description": "You can create a simple Facebook Messenger link or generate HTML code for your website.",
     "label": "Enter your Facebook page name",
@@ -115,12 +114,12 @@
     "result": "Here is your link for {messenger}, copy it and use where you want"
   },
   "navigation": {
-    "home_link_name": "Home",
-    "page_generator_link_name": "Create a contact page",
+    "homeLinkName": "Home",
+    "pageGeneratorLinkName": "Create a contact page",
     "back": "Go back",
     "share": "Share:"
   },
-  "all_messengers": {
-    "html_code": "HTML Link Code"
+  "allMessengers": {
+    "htmlCode": "HTML Link Code"
   }
 }

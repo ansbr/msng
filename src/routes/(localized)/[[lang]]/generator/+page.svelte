@@ -77,7 +77,7 @@
   <div class="picker" class:d-none={stage != 0}>
     <div class="text-center pb-4">
       <p>{$_('landing.description')}</p>
-      <h4>{$_('landing.check_messengers')}</h4>
+      <h4>{$_('landing.checkMessengers')}</h4>
     </div>
     <ListGenerator bind:selected={selectedMessengers} />
   </div>
@@ -101,7 +101,7 @@
 
   {#if stage == 2}
     <div class="container constructor">
-      <p>{$_('landing.here_is_your_link')}</p>
+      <p>{$_('landing.hereIsYourLink')}</p>
       <div class="input-group mb-3 input-group-lg">
         <ResultLink {generatedLink} />
       </div>
