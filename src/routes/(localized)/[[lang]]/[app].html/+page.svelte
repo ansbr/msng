@@ -3,12 +3,11 @@
   import type { MessengerType } from "$lib/types/MessengerType";
   import ListBottom from '$lib/messengers/ListBottom.svelte';
 	import { _ } from 'svelte-i18n'
-  import copy from 'copy-to-clipboard';
   import Input from '$lib/messengers/Input.svelte';
+  import ResultLink from '$lib/messengers/ResultLink.svelte';
   export let data;
   let messenger: MessengerType = data.props.messenger;
   let generatedLink: string | undefined;
-  let isCopied = false;
   let translates = getTranslates(messenger);
 
   function getTranslates(messenger: MessengerType) {
@@ -29,21 +28,14 @@
     generatedLink = `${$page.url.origin}/o?${messenger.value}=${messenger.slug}`
   }
 
-  const handleCopy = () => {
-    copy(generatedLink || '');
-    isCopied = true
-  }
-
   page.subscribe(pg => {
     messenger = data.props.messenger;
     messenger.value = '';
     generatedLink = undefined;
     translates = getTranslates(messenger)
-    isCopied = false;
   });
 
   const handleBack = () => {
-    isCopied = false;
     generatedLink = undefined;
   }
 
@@ -88,10 +80,7 @@
   {#if generatedLink}
     <p>{translates.result}</p>
     <div class="input-group mb-3 input-group-lg">
-      <input type="text" class="form-control" value={generatedLink} readonly>
-      <button class="btn btn-primary d-flex align-items-center" class:btn-success={isCopied} type="button" on:click={handleCopy}>
-        <svg width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#fff" d="M320 448v40c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V120c0-13.255 10.745-24 24-24h72v296c0 30.879 25.121 56 56 56h168zm0-344V0H152c-13.255 0-24 10.745-24 24v368c0 13.255 10.745 24 24 24h272c13.255 0 24-10.745 24-24V128H344c-13.2 0-24-10.8-24-24zm120.971-31.029L375.029 7.029A24 24 0 0 0 358.059 0H352v96h96v-6.059a24 24 0 0 0-7.029-16.97z"></path></svg>
-      </button>
+      <ResultLink {generatedLink} />
     </div>
     <div class="pt-2 pb-3">
       <button class="btn btn-secondary btn-lg" on:click={handleBack}>{$_('navigation.back')}</button>

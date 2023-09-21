@@ -2,15 +2,14 @@
   import { page } from '$app/stores';
   import type { MessengerType } from "$lib/types/MessengerType";
 	import ListGenerator from '$lib/messengers/ListGenerator.svelte';
-  import copy from 'copy-to-clipboard';
 	import { _ } from 'svelte-i18n'
   import Input from '$lib/messengers/Input.svelte';
+  import ResultLink from '$lib/messengers/ResultLink.svelte';
 
   let selectedMessengers: MessengerType[] = [];
   let stage: number = 0
   let container: HTMLDivElement;
   let generatedLink: string | undefined = undefined;
-  let isCopied = false;
 
   const mobileCheck = function() {
     let check = false;
@@ -18,14 +17,8 @@
     return check;
   };
 
-  const handleCopy = () => {
-    copy(generatedLink || '');
-    isCopied = true
-  }
-
   const handleBack = () => {
     stage = 0;
-    isCopied = false;
     generatedLink = undefined;
   }
 
@@ -110,10 +103,7 @@
     <div class="container constructor">
       <p>{$_('landing.here_is_your_link')}</p>
       <div class="input-group mb-3 input-group-lg">
-        <input type="text" class="form-control" value={generatedLink} readonly>
-        <button class="btn btn-primary d-flex align-items-center" class:btn-success={isCopied} type="button" on:click={handleCopy}>
-          <svg width="20" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512"><path fill="#fff" d="M320 448v40c0 13.255-10.745 24-24 24H24c-13.255 0-24-10.745-24-24V120c0-13.255 10.745-24 24-24h72v296c0 30.879 25.121 56 56 56h168zm0-344V0H152c-13.255 0-24 10.745-24 24v368c0 13.255 10.745 24 24 24h272c13.255 0 24-10.745 24-24V128H344c-13.2 0-24-10.8-24-24zm120.971-31.029L375.029 7.029A24 24 0 0 0 358.059 0H352v96h96v-6.059a24 24 0 0 0-7.029-16.97z"></path></svg>
-        </button>
+        <ResultLink {generatedLink} />
       </div>
       <div class="pt-2 pb-3">
         <button class="btn btn-secondary btn-lg" on:click={handleBack}>{$_('navigation.back')}</button>
