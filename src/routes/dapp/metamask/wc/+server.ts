@@ -4,11 +4,9 @@ export const GET: RequestHandler = async (page) => {
   let uri = page.url.searchParams.get('uri');
   const requestId = page.url.searchParams.get('requestId');
   if (uri) {
-    uri = uri.replace('wc', 'metamask');
-    console.log(uri)
-    return Response.redirect(uri, 302);
+    return Response.redirect(`https://metamask.app.link/wc?uri=${uri}`, 302);
   } else if (requestId) {
-    return Response.redirect('metamask:' + requestId, 302);
+    return Response.redirect(`https://metamask.app.link/wc?uri=${requestId}`, 302);
   } else {
     return new Response('Not correct params', { status: 200 });
   }
