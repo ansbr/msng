@@ -11,4 +11,7 @@
   <li class="nav-item">
     <a class="nav-link" class:link-dark={$page.url.pathname == langUrl('/generator', $locale)} href={langUrl('/generator', $locale)}>{$_('navigation.pageGeneratorLinkName')}</a>
   </li>
+  <li class="nav-item">
+    <a class="nav-link" href={'https://getlink.space'}>URL Shortener</a>
+  </li>
 </ul>
